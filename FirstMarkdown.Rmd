@@ -1,0 +1,144 @@
+---
+title: "My First Markdown Document"
+author: "Reed Scott"
+date: "31 January 2022"
+output:
+  html_document: 
+    theme: cerulean
+  word_document: default
+  pdf_document: default
+---
+
+Add text here. Just use it like a type writer, and add as much or as little as you like.
+
+Next text appears here in a separate paragraph.
+
+Reed Scott  
+RSENR  
+University of Vermont  
+
+Use 2 or more blank spaces at the end of a single spaced line.
+
+# First level header  
+## Second level header  
+### Third Level Header  
+
+#Basic Text Formatting
+italic *text* like this
+
+bold **text** like this
+
+subscript~text~ like this
+
+superscript^text^ like this
+
+strikethrough ~~text~~ like this
+
+# Lists
+## Unordered Lists
+* Item 1
+* Item 2
+    + Item 2a
+    + Item 2b
+    
+## Ordered List
+1. Item 1
+2. Item 2
+3. Item 3
+    + Item 3a
+    + Item 3b
+
+# Fencing
+
+In line fencing with a backtick `to show anything in plain text with *no* formatting` which can be useful for many things.
+
+In line execution of r inside the backticks by insterting r as the first element `r 3 + pi`
+
+In line execution of r inside the backticks by insterting r as the first element ` 3 + pi`
+
+3 backticks for a whole section of plain text
+
+```
+Everything in here is in plaintext.
+even single lines.
+
+useful especially when showing other coding instructions.
+```
+
+# Block quotes with `>`
+
+> To be or not to be, that is the question. Whether tis nobler... blah blah blah
+
+# Space line with 3 or more underscores
+
+___
+
+Adds a line between text...
+
+#Links
+
+[linked phrase](http://example.com)
+
+'[Linked image[(figures/img.png)'
+
+#Table  
+
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | *formatted text*
+
+#LaTex code for equations
+
+We set off equations with `$` for brackets
+
+## In-line equations vs stand-alone equations
+
+These equations such as $a = 3+4$ will appear inside of a single line of text.
+
+These equations such as $$a = 3+4$$ will appear in a separate line, on their own.
+
+## Subscripts
+
+$$H_0 = Z_{a + b}$$
+
+## Superscripts
+
+$$S = cA^z + cA^{z+2}$$
+
+Elements can be couples + nested
+
+$$S = cA^z_1 +z_{2+x}$$
+
+## Fractions + greek symbols
+$$\alpha = \frac{\beta}{\delta + \gamma_x}$$
+
+## Summation signs
+
+$$z = \sum_{i=1}^X{K_i}$$
+
+## Escape the backslash with a custom term
+
+$$ \backslash \alpha \le b \backslash$$
+
+## Rendering plaintext in a LaTeX equation
+
+$$P(Occurrence of Species A) = Z$$
+
+$$P(\mbox{Occurence of Species A}) = Z$$
+
+```{r, echo=FALSE,eval=FALSE}
+#Don't forget to start with comments!
+#Preliminaries
+#echo= tells R whether the underlying code should be show
+#eval= tells R whether the code should be run
+library(ggplot2)
+pred <- 1:10 #vector of 10 integers
+res <- runif(10) #random uniform values
+
+#print the random numbers#
+print(res)
+qplot(x = pred, y = res)
+
+```
+Now back to writing in our markdown document, including latex equations if we need them such as $a+b$ inserted in the middle of my sentence
