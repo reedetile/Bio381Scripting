@@ -1,0 +1,25 @@
+\documentclass{beamer}
+
+\begin{document}
+
+\begin{slide}
+
+Hi there!
+
+\end{slide}
+
+\begin{slide}
+
+This is pretty cool.
+
+\end{slide}
+
+\begin{slide}
+
+Kind of a lot though
+
+\end{slide}
+
+
+
+\end{document}
