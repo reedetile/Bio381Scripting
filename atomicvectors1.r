@@ -95,3 +95,9 @@ is.na(z) #tells you which values are NA
 mean(z) #NA b/c z has an NA value
 !is.na(z) #NOT NA
 mean(z[!is.na(z)]) #mean of subset of z that doesn't have NA
+
+#NaN, -Inf, Inf
+#NaN = Not a number
+0/0
+1/0
+-1/0
