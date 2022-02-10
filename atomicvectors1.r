@@ -101,3 +101,41 @@ mean(z[!is.na(z)]) #mean of subset of z that doesn't have NA
 0/0
 1/0
 -1/0
+
+#feature 1 of vecotrs: coercion
+z <- c(0,'o')
+typeof(z)
+
+a <- runif(10)
+a
+
+#comparison operator yields a logical
+
+a > 0.5
+
+#doing math operations on a logcail coerces to a integer
+
+#Ex: how many elements are greater than 0.5
+sum(a > 0.5)
+
+#proportion of elements meeting a condition
+mean(a < 0.2)
+mean(a > 0.2)
+mean(a > 2)
+
+#feature 2: vectorization
+z <- c(10,20,30)
+z + 1
+
+
+#what happens when 2 vectors are added
+y <- c(1,2,3)
+z + y
+
+#feature 3: recycling
+z <- seq(1:6)
+x <- c(10,20,30)
+z+x
+
+x <- c(10,20,30,40)
+z+x
