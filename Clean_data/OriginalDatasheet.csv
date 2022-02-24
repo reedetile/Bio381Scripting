@@ -1,0 +1,11 @@
+#comments at the top
+# lines of metadata
+#start of my notes
+# more of my notes
+,,,
+ID,Treatment,Biomass,Notes
+1,control,30.3,
+# add notation lines within the file
+2,highN,13,
+3,highN,NA,broke scale
+4,control,35.3,

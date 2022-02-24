@@ -1,0 +1,7 @@
+"V1","V2","V3","V4"
+"1","","","",""
+"2","ID","Treatment","Biomass","Notes"
+"3","1","control","30.3",""
+"4","2","highN","13",""
+"5","3","highN",NA,"broke scale"
+"6","4","control","35.3",""

@@ -97,3 +97,41 @@ z[-(length(z):length(z-2))]
 names(z) <- letters[1:5]
 print(z)
 z[c('b','c')]
+
+#relational operators
+# >
+# <
+# <=
+# >=
+# ==
+
+#logical operators
+# ! not
+# & and (vector)
+# | or
+# xor(x,y) one or the other - not both
+# && and (only on first element)
+# || or (only on first element)
+
+x <- 1:5
+y <- c(1:3,7,7)
+x == 2
+x != 2
+x == 1 & y == 7
+x == 1 | y ==7
+xor(x == 3,y == 3)
+x == 3 && y ==3
+
+#subscripting w/ missing values#
+set.seed(90)
+z <- runif(10)
+z
+z < 0.5
+z[z < 0.5]
+which(z < 0.5)
+z[which(z < 0.5)]
+
+zD <- c(z,NA,NA)
+zD
+zD[zD < 0.5]
+zD[which(zD < 0.5)]
