@@ -61,3 +61,16 @@ p1 + theme_dark() # good for brightly colored points
 p1 + theme_base() # mimics base R
 # use theme parameters to modify font and font size
 p1 + theme_classic(base_size=40,base_family="serif")
+
+p2 <- ggplot(data=d)+
+  aes(x=fl, fill = fl)+
+  geom_bar()
+p2
+#flip x and y axis#
+p2 + coord_flip() + theme_grey(base_size = 20,base_family = 'sans')
+
+#minor modifications#
+p1 <- ggplot(data=d)+ 
+  aes(x=displ,y=cty)+ 
+  geom_point(size =7, shape = 21, color = 'black',fill = 'steelblue')
+p1
